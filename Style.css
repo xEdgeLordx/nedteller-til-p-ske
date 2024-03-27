@@ -1,0 +1,14 @@
+html{
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    font-size: 40px;
+}.wrapper{
+    background-color: white;
+    border: solid purple 20px;
+    border-radius: 15px;
+margin: 100px;
+padding: 10px;
+max-width: 500px;
+
+}
