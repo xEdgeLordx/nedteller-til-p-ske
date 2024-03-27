@@ -1,7 +1,7 @@
 html{
     display: flex;
     justify-content: center;
-    background-color: #121212;
+    background-color: rgb(245, 245, 130);
     font-size: 40px;
 }.wrapper{
     background-color: white;

@@ -4,48 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div id="app">
 
 
     </div>
+<script src="model.js"></script>
+<script src="controller.js"></script>
+<script src="view.js"></script>
 
 
-    <script>
-
-
-        let app = document.getElementById('app');
-
-        let påske = new Date("Mar 30, 2024 00:00:00").getTime();
-
-
-
-updateView()
-
-        function updateView(){
-            let TimeToEaster = new Date()
-            app.innerHTML = `<div class = "wrapper">
-<div class = "countdown">Nedteller til påske</div>
-<div class = "facts">Påske Facts</div>
-                <div>${getTimeRemaining()}</div>`
-
-        }
-        function getTimeRemaining(){
-
-            let now = new Date().getTime();
-
-            let timeRemaining = påske - now;
-
-            let remainingDays = Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
-            let remainingHours = Math.floor(timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
-
-            return remainingDays;
-
-
-
-        }
-
-    </script>
 </body>
 </html>

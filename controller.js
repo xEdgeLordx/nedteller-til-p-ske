@@ -5,8 +5,8 @@ function getTimeRemaining(){
 
     let remainingDays = Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
     let remainingHours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    return `<div>Det er ${remainingDays} dager og ${remainingHours} timer til påske.</div>`
+    let remainingMin = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    return `<div>Det er ${remainingDays} dager, ${remainingHours} timer og ${remainingMin} minutter til påske.</div>`
 
 
 
@@ -18,7 +18,6 @@ function getFact(){
 
     let remainingDays = Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
     let remainingHours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
     if(remainingDays == 3){
         return "Palmesøndag er søndag før påske. Den feires til minne om Jesu inntog i Jerusalem."
     } else if(remainingDays == 2){
